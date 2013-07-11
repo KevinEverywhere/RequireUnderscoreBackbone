@@ -1,7 +1,7 @@
 Require -> Underscore -> Backbone -> JQuery
 =========================
 
-By Kevin Ready, the example presents a single page application which uses the following frameworks and techniques.
+The example presents a single page application which uses the following frameworks and techniques.
 
   Require: Module Loader for Application
 
