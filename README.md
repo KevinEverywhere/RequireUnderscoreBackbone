@@ -3,13 +3,20 @@ Require -> Underscore -> Backbone -> JQuery
 
 By Kevin Ready, the example presents a single page application which uses the following frameworks and techniques.
 
-Require: Module Loader for Application
-JQuery: Base Utility, Selector and Browser Management
-Underscore: Templating and General Purpose Utility
-Backbone: Class Definition and Application Control
-Responsive Design: Feature and Resolution Based Coding
-Localization: A Backbone Based Solution for Localization
-Script Injection: Safe Cross Domain Loading of Foreign URL Assets
+  Require: Module Loader for Application
+
+  JQuery: Base Utility, Selector and Browser Management
+
+  Underscore: Templating and General Purpose Utility
+
+  Backbone: Class Definition and Application Control
+
+  Responsive Design: Feature and Resolution Based Coding
+
+  Localization: A Backbone Based Solution for Localization
+
+  Script Injection: Safe Cross Domain Loading of Foreign URL Assets
+
 Frameworks and Techniques
 
 Framework selection
@@ -56,8 +63,5 @@ Summary
 
 This example should help readers quickly get up to speed on how to set up the beginning of a Backbone-based responsive website. There are many excellent resources out there. I hope that someone finds that this helps them at a point when they needed it.
 
-Links
-
-Text view of the Live Document - | - ZIP source code
 
 All content created, copied or modified by Kevin Ready
