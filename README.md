@@ -17,7 +17,7 @@ By Kevin Ready, the example presents a single page application which uses the fo
 
   Script Injection: Safe Cross Domain Loading of Foreign URL Assets
 
-Frameworks and Techniques
+
 
 Framework selection
 
@@ -35,7 +35,6 @@ Script Injection: Safe Cross Domain
 
 This application features two ajax loading mechanisms: one same-domain for loading the language and country menus; and one cross-domain, which injects SCRIPT elements at runtime in response to the server return from a Country selection query. These are viewed in the controller.js file, and these will need to be modified to work with distinct data sources. One must know the structure of the returned server file in order to know how to process its return. Often, the return is not a single node of XML or JSON, and one needs to traverse the structure to find the values that map to client-side classes. For instance, the same feed that works here often has nodes with image definition at one level deeper than the title and description contents. These can be individually discerned and mapped in the callback function if required for use in your application.
 
-The Application
 
 Initiating the Flow
 
