@@ -1,0 +1,697 @@
+/*  This base code includes normalize and additional Demo-specific style beginning at line 375.  */
+/* normalize.css v2.0.1 | MIT License | git.io/normalize */
+/* ==========================================================================
+   HTML5 display definitions
+   ========================================================================== */
+/*
+ * Corrects `block` display not defined in IE 8/9.
+ */
+/* line 21, ../src/partials/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/*
+ * Corrects `inline-block` display not defined in IE 8/9.
+ */
+/* line 31, ../src/partials/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/*
+ * Prevents modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+/* line 40, ../src/partials/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/*
+ * Addresses styling for `hidden` attribute not present in IE 8/9.
+ */
+/* line 49, ../src/partials/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+/*
+ * 1. Sets default font family to sans-serif.
+ * 2. Prevents iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+/* line 63, ../src/partials/_normalize.scss */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/*
+ * Removes default margin.
+ */
+/* line 73, ../src/partials/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Links
+   ========================================================================== */
+/*
+ * Addresses `outline` inconsistency between Chrome and other browsers.
+ */
+/* line 85, ../src/partials/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+
+/*
+ * Improves readability when focused and also mouse hovered in all browsers.
+ */
+/* line 94, ../src/partials/_normalize.scss */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+/*
+ * Addresses `h1` font sizes within `section` and `article` in Firefox 4+,
+ * Safari 5, and Chrome.
+ */
+/* line 107, ../src/partials/_normalize.scss */
+h1 {
+  font-size: 2em;
+}
+
+/*
+ * Addresses styling not present in IE 8/9, Safari 5, and Chrome.
+ */
+/* line 115, ../src/partials/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/*
+ * Addresses style set to `bolder` in Firefox 4+, Safari 5, and Chrome.
+ */
+/* line 124, ../src/partials/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/*
+ * Addresses styling not present in Safari 5 and Chrome.
+ */
+/* line 132, ../src/partials/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/*
+ * Addresses styling not present in IE 8/9.
+ */
+/* line 140, ../src/partials/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/*
+ * Corrects font family set oddly in Safari 5 and Chrome.
+ */
+/* line 153, ../src/partials/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/*
+ * Improves readability of pre-formatted text in all browsers.
+ */
+/* line 162, ../src/partials/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/*
+ * Sets consistent quote types.
+ */
+/* line 172, ../src/partials/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/*
+ * Addresses inconsistent and variable font size in all browsers.
+ */
+/* line 180, ../src/partials/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/*
+ * Prevents `sub` and `sup` affecting `line-height` in all browsers.
+ */
+/* line 189, ../src/partials/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 196, ../src/partials/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 200, ../src/partials/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* ==========================================================================
+   Embedded content
+   ========================================================================== */
+/*
+ * Removes border when inside `a` element in IE 8/9.
+ */
+/* line 212, ../src/partials/_normalize.scss */
+img {
+  border: 0;
+}
+
+/*
+ * Corrects overflow displayed oddly in IE 9.
+ */
+/* line 220, ../src/partials/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* ==========================================================================
+   Figures
+   ========================================================================== */
+/*
+ * Addresses margin not present in IE 8/9 and Safari 5.
+ */
+/* line 232, ../src/partials/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* ==========================================================================
+   Forms
+   ========================================================================== */
+/*
+ * Define consistent border, margin, and padding.
+ */
+/* line 244, ../src/partials/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/*
+ * 1. Corrects color not being inherited in IE 8/9.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+/* line 255, ../src/partials/_normalize.scss */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Corrects font family not being inherited in all browsers.
+ * 2. Corrects font size not being inherited in all browsers.
+ * 3. Addresses margins set differently in Firefox 4+, Safari 5, and Chrome
+ */
+/* line 269, ../src/partials/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/*
+ * Addresses Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+/* line 281, ../src/partials/_normalize.scss */
+button,
+input {
+  line-height: normal;
+}
+
+/*
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Corrects inability to style clickable `input` types in iOS.
+ * 3. Improves usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+/* line 296, ../src/partials/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/*
+ * Re-set default cursor for disabled elements.
+ */
+/* line 306, ../src/partials/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/*
+ * 1. Addresses box sizing set to `content-box` in IE 8/9.
+ * 2. Removes excess padding in IE 8/9.
+ */
+/* line 316, ../src/partials/_normalize.scss */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 327, ../src/partials/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 340, ../src/partials/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * Removes inner padding and border in Firefox 4+.
+ */
+/* line 349, ../src/partials/_normalize.scss */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 359, ../src/partials/_normalize.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+
+/* LINE 375 NEW FROM KEVIN READY */
+
+html{
+	height: 100%;
+	font-size: 100%;
+}
+
+body {
+	font: normal .85em Helvetica, Arial, sans-serif;
+	padding: 0em;
+	margin: 0em;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left:0em;
+	top:0em;
+	-webkit-text-size-adjust:none;
+	-moz-text-size-adjust:none;
+	text-size-adjust:none;
+}
+
+#masterTemplate{
+	background-color:#c00;
+	position:absolute;
+	top:0em;
+	left:0em;
+	right:0em;
+	bottom:0em;
+	overflow:hidden;
+}
+.whitenCenter{
+	position:relative;
+	width:85%;
+	height:85%;
+	background-color:#fff;
+	margin:6%;
+}
+.fullWidth{
+	margin: 0em;
+	padding: 0em;
+	position:relative;
+	cursor:pointer;
+	height:25%;
+}
+.fullWidth.inactive{
+	background-color:#FADA82;
+}
+.fullWidth.active{
+	background-color:#FAB905;
+}
+.centerBig{
+	font-size:1.4em;
+	margin:15%;
+}
+img{
+	margin: 0.2em 1em 1em 1em;
+	padding:1em;
+}
+.bodyText, #toLink{
+	margin: .4em;
+	padding:.8em;
+}
+#notViewable{
+	position:absolute;
+	top:0em;
+	left:0em;
+	right:0em;
+	bottom:0em;
+	font-size:0.8em;
+	margin:10%;
+	color:white;
+}
+
+@media only screen and (min-width:732px) and (min-height:240px){
+	#notViewable{
+		display:none;
+	}
+	#descriptionTemplate{
+		position:absolute;
+		top:0em;
+		left:0em;
+		width:65%;
+		background-color:#ffc;
+		height:6em;
+		margin:0em;
+		padding:0em;
+	}
+	#headlineTemplate{
+		position:absolute;
+		top:6em;
+		left:0em;
+		width:65%;
+		height:3em;
+		background-color:#eeb;
+	}
+	#navigationTemplate{
+		position:absolute;
+		background-color:#cfc;
+		top:9em;
+		left:0em;
+		width:30%;
+		bottom:0em;
+		margin:0em;
+		padding:0em;
+	}
+	#localizationPane{
+		position:absolute;
+		height:9em;
+		right:0em;
+		top:0em;
+		width:35%;
+		margin:0em;
+		padding:0em;
+		background-color:#fcc;
+	}
+	#countryTemplate{
+		width:100%;
+		height:4.5em;
+	}
+	#languageTemplate{
+		width:100%;
+		height:4.5em;
+	}
+	#itemPane{
+		position:absolute;
+		width:70%;
+		top:9em;
+		right:0em;
+		bottom:0em;
+		margin:0em;
+		padding:0em;
+		background-color:#ccf;
+	}
+	#theNav{
+		height:100%;
+		width:100%;
+		margin:0em;
+		padding: 0em;
+	}
+	.heading{
+		margin: 0em;
+		padding:0em;
+		height: 2.5em;
+	}
+	.innerHeading{
+		height:auto;
+		width:auto;
+		padding:0.4em;
+		margin:0em;
+	}
+	.navTab{
+		height:100%;
+		width:100%;
+		margin: 0em;
+		padding:.3em;
+	}
+	.itemHeading{
+		text-transform:uppercase;
+		font-weight:700;
+		font-size:1.1em;
+		margin: .4em;
+		padding:.8em;
+	}
+}
+
+@media only screen and (max-width:731px) and (min-width:432px) and (min-height:432px){
+	#notViewable{
+		display:none;
+	}
+	#descriptionTemplate{
+		position:absolute;
+		top:0em;
+		left:0em;
+		right:0em;
+		background-color:#ffc;
+		height:8em;
+		margin:0em;
+		padding:0em;
+	}
+	#headlineTemplate{
+		position:absolute;
+		top:8em;
+		left:0em;
+		right:0em;
+		height:3em;
+		background-color:#eeb;
+	}
+	#navigationTemplate{
+		position:absolute;
+		background-color:#cfc;
+		top:20em;
+		left:0em;
+		right:0em;
+		bottom:0em;
+		margin:0em;
+		padding:0em;
+	}
+	#localizationPane{
+		position:absolute;
+		height:9em;
+		right:0em;
+		left:0em;
+		top:11em;
+		margin:0em;
+		padding:0em;
+		background-color:#fcc;
+	}
+	#countryTemplate{
+		left:0em;
+		right:0em;
+		height:4.5em;
+	}
+	#languageTemplate{
+		left:0em;
+		right:0em;
+		height:4.5em;
+	}
+	#itemPane{
+		visibility:hidden;
+		position:absolute;
+		top:17.5em;
+		left:0em;
+		right:0em;
+		margin:0em;
+		padding:0em;
+		bottom:0em;
+		background-color:#ccf;
+	}
+	#theNav{
+		height:100%;
+		width:100%;
+		margin:0em;
+		padding: 0em;
+	}
+	.heading{
+		margin: 0em;
+		padding:0em;
+		height: 2.5em;
+	}
+	.innerHeading{
+		height:auto;
+		width:auto;
+		padding:0.4em;
+		margin:0em;
+	}
+	.navTab{
+		height:100%;
+		width:100%;
+		margin: 0em;
+		padding:.3em;
+	}
+	.itemHeading{
+		text-transform:uppercase;
+		font-weight:700;
+		font-size:1.1em;
+		margin: .4em;
+		padding:.8em;
+	}
+}
+
+@media only screen and (max-width:431px){
+	#notViewable{
+		display:block;
+	}
+	#descriptionTemplate{
+		visibility:hidden;
+	}
+	#headlineTemplate{
+		visibility:hidden;
+	}
+	#navigationTemplate{
+		visibility:hidden;
+	}
+	#localizationPane{
+		visibility:hidden;
+	}
+	#itemPane{
+		visibility:hidden;
+	}
+}
+
+@media only screen and (orientation:landscape) and (min-width:432px) and (max-width:731px) and (min-height:240px) and (max-height:431px){
+	#notViewable{
+		display:block;
+	}
+	#descriptionTemplate{
+		visibility:hidden;
+	}
+	#headlineTemplate{
+		visibility:hidden;
+	}
+	#navigationTemplate{
+		visibility:hidden;
+	}
+	#localizationPane{
+		visibility:hidden;
+	}
+	#itemPane{
+		visibility:hidden;
+	}
+}
+
+@media only screen and (max-height:239px){
+	#notViewable{
+		display:block;
+	}
+	#descriptionTemplate{
+		visibility:hidden;
+	}
+	#headlineTemplate{
+		visibility:hidden;
+	}
+	#navigationTemplate{
+		visibility:hidden;
+	}
+	#localizationPane{
+		visibility:hidden;
+	}
+	#itemPane{
+		visibility:hidden;
+	}
+}
+

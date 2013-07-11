@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<TITLE>Require -> JQuery -> Underscore -> Backbone</TITLE>
+<?php include_once("templates/templates.php"); ?>
+
+	<link rel="stylesheet" type="text/css" href="styles/main.css" />
+</head>
+<body>
+		<script data-main="scripts/main" src="libs/require.min.js"></script>
+</body>
+</html>
+
+About the Author:
+
+Kevin Ready is a developer who has programmed in a number of languages over the past twenty years. He currently resides in Budapest (July 2013).
+
+This example demonstrates the integration of Require, JQuery, Backbone and Underscore with a degree of complexity. The application flow:
+
+* At static page, underscore templates work with server-side JSON structures to provide localized content.
+  - Pull down country menu activates search, results appear below.
+  - Pull down language menu changes active language.
+* The only element in the raw page is the requireJS stub that looks to scripts/main for initiation.
+* scripts/main.js defines the necessary JavaScript files and starts the action by invoking the Front End Controller
+* scripts/controller initiates the views, binds events to views, and contains the core business logic
+* Localizer provides for the mapping of language with fields, after which the screen is redrawn
+* Language and Country demonstrate localization and Ajax mechanisms
+* Navigation and Item demonstrate feed rendering, and multiple view-per-model
+* Description and Headline are additional child views that share LanguageCollection's localization
+* Directory structure follows Backbone/Underscore model/collection/view convention
+* libs hold frameworks; collections, models and views hold their respective class definitions
+* scripts hold main, controller, countryMap, languageMap and localized
+* styles contains a single css file for the application
+* templates contain underscoreJS templates as an include_once PHP file
+
+Additional documentation accompanies individual files. 
+
+File and Directory Structure
+index.php
+     collections
+          CountryCollection
+          LanguageCollection
+          Localizer
+     libs
+          backbone-min
+          jquery-1.9.1
+          require.min
+          underscore.min
+     models
+          CountryClass
+          ItemClass
+          LanguageClass
+          MainClass
+          NavigationClass
+     scripts
+          controller
+          countryMap
+          languageMap
+          localized
+          main
+          AllLanguageMap (not used, intended for reuse)
+     styles
+          main
+     templates
+          templates
+     views
+          CountriesView
+          CountryView
+          DescriptionView
+          HeadlineView
+          ItemsView
+          ItemView
+          LanguagesView
+          LanguageView
+          MainView
+          NavigationView
+          NavigationTabView
