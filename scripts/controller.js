@@ -223,6 +223,5 @@ define([
 			return "[Controller]";
 		}
 	});
-
 	return Controller;
 });
